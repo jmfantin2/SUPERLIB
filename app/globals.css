@@ -2,17 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+PAPER: rgb(236, 231, 228) currently replacing WHITE rgb(255, 255, 255)
+IRON: rgb(38, 42, 45) currently replacing BLACK rgb(0, 0, 0) 
+*/
+
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: 38, 42, 45;
   --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-end-rgb: 236, 231, 228;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 236, 231, 228;
+    --background-start-rgb: 38, 42, 45;
+    --background-end-rgb: 38, 42, 45;
   }
 }
 
@@ -30,4 +35,11 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* END OF DEFAULT */
+
+@font-face {
+  font-family: 'burtons';
+  src: url('../public/Burtons.otf');
 }
