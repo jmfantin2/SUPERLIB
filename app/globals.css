@@ -37,9 +37,121 @@ body {
   }
 }
 
-/* END OF DEFAULT */
+/* ! END OF DEFAULT */
 
 @font-face {
   font-family: 'burtons';
   src: url('../public/Burtons.otf');
 }
+
+/* ? FlameLoader BEGIN */
+.oxygen {
+  .fire {
+    position: relative;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    height: 6rem;
+    width: 6rem;
+    .flames {
+      position: absolute;
+      bottom: 40%;
+      left: 50%;
+      width: 60%;
+      height: 60%;
+      transform: translateX(-50%) rotate(45deg);
+      .flame {
+        position: absolute;
+        right: 0%;
+        bottom: 0%;
+        width: 0%;
+        height: 0%;
+        background-color: #fdc569;
+        border-radius: 1vw;
+        &:nth-child(1) {
+          animation: flameodd 1.618s ease-in infinite;
+        }
+        &:nth-child(2) {
+          animation: flameeven 1.5s ease-in infinite;
+        }
+        &:nth-child(3) {
+          animation: flameeven 1.736s ease-in infinite;
+        }
+      }
+    }
+  }
+
+  @keyframes flameodd {
+    0%,
+    100% {
+      width: 0%;
+      height: 0%;
+    }
+    25% {
+      width: 100%;
+      height: 100%;
+    }
+    0% {
+      background-color: #fdc569;
+      z-index: 1000000;
+    }
+    40% {
+      background-color: #ff9f4a;
+      z-index: 1000000;
+    }
+    100% {
+      background-color: #ff7033;
+      z-index: -10;
+    }
+    0% {
+      right: 0%;
+      bottom: 0%;
+    }
+    25% {
+      right: 1%;
+      bottom: 2%;
+    }
+    100% {
+      right: 150%;
+      bottom: 170%;
+    }
+  }
+
+  @keyframes flameeven {
+    0%,
+    100% {
+      width: 0%;
+      height: 0%;
+    }
+    25% {
+      width: 100%;
+      height: 100%;
+    }
+    0% {
+      background-color: #ff7033;
+      z-index: 1000000;
+    }
+    40% {
+      background-color: #ff9f4a;
+      z-index: 1000000;
+    }
+    100% {
+      background-color: #fdc569;
+      z-index: -10;
+    }
+    0% {
+      right: 0%;
+      bottom: 0%;
+    }
+    25% {
+      right: 2%;
+      bottom: 1%;
+    }
+    100% {
+      right: 170%;
+      bottom: 150%;
+    }
+  }
+}
+
+/* ? FlameLoader END */

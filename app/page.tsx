@@ -1,4 +1,5 @@
 'use client';
+import { FlameLoader } from '@/components/FlameLoader';
 import { Navigator } from '@/components/Navigator';
 import Head from 'next/head';
 export default function Home() {
@@ -13,13 +14,14 @@ export default function Home() {
       <main className="bg-PAPER h-[100vh] px-4 dark:bg-IRON md:px-20 lg:px-40">
         <Navigator />
 
-        <section className="mb-16 lg:mb-0 group rounded-lg border px-5 py-4 text-center transition-colors text-IRON dark:text-PAPER border-gray-400/30 bg-gray-100/30 dark:border-neutral-700 dark:bg-neutral-800/30">
+        <section className="mb-16 lg:mb-0 group rounded-lg border px-5 py-4 text-left transition-colors text-IRON dark:text-PAPER border-gray-400/30 bg-gray-100/30 dark:border-neutral-700 dark:bg-neutral-800/30">
           <h2 className={`mb-3 text-2xl font-semibold`}>
             Docs{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
+          <FlameLoader />
         </section>
       </main>
     </>
