@@ -19,6 +19,7 @@ const config: Config = {
       colors: {
         PAPER: '#ece7e4',
         IRON: '#262a2d',
+        MIDDLE: '#898989',
         INDUSTRY: '#637465',
         EMERALD: '#10B981',
         CYAN: '#06B6D4',

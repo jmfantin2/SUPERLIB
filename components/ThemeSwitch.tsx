@@ -1,9 +1,9 @@
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { FaSun } from 'react-icons/fa';
-import { PiTriangleDuotone } from 'react-icons/pi';
 
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
+import { SpinningTriangle } from './SpinningTriangle';
 
 export function ThemeSwitch() {
   //! these are needed for server-side verification
@@ -13,8 +13,7 @@ export function ThemeSwitch() {
   //! useEffect only runs in the client, which means the component will be mounted as soon as it runs
   useEffect(() => setMounted(true), []);
 
-  if (!mounted)
-    return <PiTriangleDuotone className="text-2xl text-slate-500" />;
+  if (!mounted) return <SpinningTriangle />;
 
   if (resolvedTheme === 'dark') {
     return (
