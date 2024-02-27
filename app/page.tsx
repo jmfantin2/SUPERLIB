@@ -1,12 +1,7 @@
 'use client';
 import { Navigator } from '@/components/Navigator';
 import Head from 'next/head';
-import TXT from '@/lib/strings';
-import { useTheme } from '@/contexts/ThemeProvider';
-
 export default function Home() {
-  const { mode } = useTheme();
-
   return (
     <>
       <Head>
@@ -15,7 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-PAPER px-4 dark:bg-IRON md:px-20 lg:px-40">
+      <main className="bg-PAPER h-[100vh] px-4 dark:bg-IRON md:px-20 lg:px-40">
         <Navigator />
 
         <div className="mb-16 text-center lg:w-full lg:mb-0 lg:text-left">
