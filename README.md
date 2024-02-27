@@ -19,5 +19,7 @@ Requires: { 'autoprefixer', 'postcss' }
 
 'Lodash' is a JavaScript utility library, commonly used to manipulate strings and make language switching easy.
 
+'React Modal' is an accessible modal dialog component for React.
+
 ```
 
