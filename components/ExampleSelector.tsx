@@ -12,9 +12,9 @@ export function ExampleSelector() {
     <div
       id="BOTAO SELECAO COMPONENTE"
       className="flex w-full h-10 items-center justify-center 
-      bg-gradient-to-br from-ROSE to-ORANGE backdrop-blur-2xl border-2 border-IRON 
+      bg-gradient-to-br from-ROSE to-ORANGE backdrop-blur-2xl border-2 border-IRON/30 
       hover:bg-gradient-to-tl hover:cursor-pointer transition-colors ease-in-out
-    dark:border-PAPER dark:from-CYAN dark:to-EMERALD fixed bottom-0 left-0 md:static md:w-auto  md:rounded-xl p-4 md:ml-8 lg:dark:bg-zinc-800/30 md:mr-32"
+    dark:border-PAPER/50 dark:from-CYAN dark:to-EMERALD fixed bottom-0 left-0 md:static md:w-auto  md:rounded-xl p-4 md:ml-8 lg:dark:bg-zinc-800/30 md:mr-32"
     >
       {TXT('EXEMPLO')}
     </div>
