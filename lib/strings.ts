@@ -9,4 +9,5 @@ export default function TXT(entry: string) {
 
 const records = {
   EXEMPLO: ['UM BELO EXEMPLO', 'A GREAT EXAMPLE'],
+  LISTA_DE_EXEMPLOS: ['LISTA DE EXEMPLOS', 'EXAMPLE LIST'],
 };
