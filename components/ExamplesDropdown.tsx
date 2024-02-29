@@ -27,7 +27,7 @@ export function ExamplesDropdown() {
       >
         {TXT('LISTA_DE_EXEMPLOS')}{' '}
         <IoMdArrowDropdown
-          className={shapeshifter('text-2xl ml-2', {
+          className={shapeshifter('hidden md:block text-2xl ml-2', {
             'rotate-180': isOpen,
           })}
         />
@@ -35,15 +35,17 @@ export function ExamplesDropdown() {
       {isOpen && (
         <div
           className="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
-          py-4 px-20 max-h-96 border-2 border-b-8 shadow-2xl rounded-b-3xl overflow-y-auto no-scrollbar
-          bg-PAPER/70 text-IRON border-ORANGE border-b-ROSE 
-          dark:bg-IRON/70 dark:text-PAPER dark:border-CYAN dark:border-b-EMERALD"
+          p-2 w-[50%] max-w-[300px] h-[70vh] border-2 border-b-8 shadow-2xl rounded-b-3xl overflow-y-auto no-scrollbar
+          bg-PAPER/80 text-IRON border-ORANGE border-b-ROSE 
+          dark:bg-IRON/80 dark:text-PAPER dark:border-CYAN dark:border-b-EMERALD"
           onClick={toggleDropdown}
         >
           {/* Your dropdown content here */}
-          {Array.from({ length: 20 }, (_, i) => (
-            <div key={i} className="py-2 w-full">
-              Option {i + 1}
+          {elements.map((element) => (
+            <div key={element.id} className="py-2 w-full text-center">
+              <p className="border-b-2 bg-ORANGE/20 border-ROSE/40 dark:bg-CYAN/20 dark:border-EMERALD/40 cursor-pointer">
+                {element.title}
+              </p>
             </div>
           ))}
         </div>
@@ -53,3 +55,24 @@ export function ExamplesDropdown() {
     <SpinningTriangle />
   );
 }
+
+const elements = [
+  { id: 0, title: 'INTRODUÇÃO' },
+  { id: 1, title: 'GALLERY' },
+  { id: 2, title: 'LANG SWITCHER' },
+  { id: 3, title: 'FLAME LOADER' },
+  { id: 4, title: 'GALLERY' },
+  { id: 5, title: 'LANG SWITCHER' },
+  { id: 6, title: 'FLAME LOADER' },
+  { id: 7, title: 'GALLERY' },
+  { id: 8, title: 'LANG SWITCHER' },
+  { id: 9, title: 'FLAME LOADER' },
+  { id: 10, title: 'GALLERY' },
+  { id: 11, title: 'LANG SWITCHER' },
+  { id: 12, title: 'FLAME LOADER' },
+  { id: 13, title: 'GALLERY' },
+  { id: 14, title: 'LANG SWITCHER' },
+  { id: 15, title: 'FLAME LOADER' },
+  { id: 16, title: 'GALLERY' },
+  { id: 17, title: 'LANG SWITCHER' },
+];
