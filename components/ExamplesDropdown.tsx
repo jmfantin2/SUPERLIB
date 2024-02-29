@@ -49,7 +49,7 @@ export function ExamplesDropdown() {
               key={element.id}
               className="py-2 w-full text-center rotate-180 md:rotate-0"
             >
-              <p className="border-b-2 bg-ORANGE/20 border-ROSE/40 dark:bg-CYAN/20 dark:border-EMERALD/40 cursor-pointer">
+              <p className="border-b-2 bg-ORANGE/20 border-ROSE/40 dark:bg-CYAN/20 dark:border-EMERALD/40 cursor-pointer hover:font-bold hover:text-ROSE dark:hover:text-EMERALD hover:bg-whirl_light dark:hover:bg-whirl_dark">
                 {element.title}
               </p>
             </div>
@@ -69,7 +69,7 @@ const elements = [
   { id: 3, title: 'FLAME LOADER' },
   { id: 4, title: 'THEME SWITCH' },
   { id: 5, title: 'LANG SWITCH' },
-  { id: 6, title: 'sample' },
+  { id: 6, title: 'MONSTER FLOPPY DISK' },
   { id: 7, title: 'sample' },
   { id: 8, title: 'sample' },
   { id: 9, title: 'sample' },
