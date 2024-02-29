@@ -7,7 +7,7 @@ import { Providers } from './providers';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'SUPERLIB',
+  title: 'SUPERLIB @ jmfant.in',
   description: 'Mantida por www.jmfant.in',
 };
 
