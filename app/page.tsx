@@ -1,6 +1,6 @@
 'use client';
-import { FlameLoader } from '@/components/FlameLoader';
 import { Navigator } from '@/components/Navigator';
+import { FireFist } from '@/components/demos/FireFist';
 import Head from 'next/head';
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
               -&gt;
             </span>
           </h2>
-          <FlameLoader />
+          <FireFist mode="full" />
         </section>
       </main>
     </>

@@ -14,11 +14,13 @@ export function Superlib() {
       SUPERLIB
       {mounted ? (
         <>
-          <p className="mx-2 text-base text-ORANGE dark:text-EMERALD">@</p>
+          <p className="md:hidden lg:flex mx-2 text-base text-ORANGE dark:text-EMERALD">
+            @
+          </p>
           <a
             href="https://jmfant.in"
             target="_blank"
-            className="text-base hover:cursor-pointer hover:border-b-2 border-ORANGE dark:border-EMERALD"
+            className="text-base hover:cursor-pointer hover:border-b-2 border-ORANGE dark:border-EMERALD md:hidden lg:flex"
           >
             JMFANT
             <span className="mr-0.5 text-base text-ORANGE dark:text-EMERALD">
