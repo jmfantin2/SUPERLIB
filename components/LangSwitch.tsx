@@ -7,7 +7,7 @@ export function LangSwitch() {
   return lang.iso === 'PT' ? (
     <GiBrazilFlag
       onClick={toggleLang}
-      className="bg-gradient-to-r  from-EMERALD text-amber-300 via-sky-600 to-EMERALD hover:dark:to-sky-600  px-1 max-h-8 rounded-md cursor-pointer text-4xl transition-colors ease-in-out ml-4 md:ml-8"
+      className="bg-gradient-to-r  from-EMERALD text-amber-300 via-sky-600 to-EMERALD hover:opacity-90  px-1 max-h-8 rounded-md cursor-pointer text-4xl transition-colors ease-in-out ml-4 md:ml-8"
     />
   ) : (
     <LiaFlagUsaSolid

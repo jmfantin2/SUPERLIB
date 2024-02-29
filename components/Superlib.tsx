@@ -1,18 +1,15 @@
 import { useEffect, useState } from 'react';
-import shapeshifter from 'classnames';
 import { SpinningTriangle } from './SpinningTriangle';
 
 export function Superlib() {
-  //! these are needed for server-side verification
   const [mounted, setMounted] = useState(false);
-
-  //! useEffect only runs in the client, which means the component will be mounted as soon as it runs
-  useEffect(() => setMounted(true), []);
+  useEffect(() => setMounted(true), []); //only runs in the client = indicates it has mounted
+  //! these are needed for server-side verification
 
   return (
     <p
       id="LOGO SUPERLIB"
-      className="font-burtons mt-2 text-2xl flex flex-row text-IRON dark:text-PAPER"
+      className="select-none font-burtons mt-2 text-2xl flex flex-row text-IRON dark:text-PAPER"
     >
       SUPERLIB
       {mounted ? (
