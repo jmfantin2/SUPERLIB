@@ -62,20 +62,15 @@ export function ExamplesDropdown() {
   );
 }
 
-const elements = [
+const elements = [{ id: 0, title: 'intro' }];
+
+const todo = [
   { id: 0, title: 'intro' },
   { id: 1, title: 'THIS DROPDOWN' },
-  { id: 2, title: 'FIRE FIST' },
+  { id: 2, title: 'TRIANGULAR IMAGES' },
   { id: 3, title: 'FLAME LOADER' },
   { id: 4, title: 'THEME SWITCH' },
   { id: 5, title: 'LANG SWITCH' },
   { id: 6, title: 'MONSTER FLOPPY DISK' },
-  { id: 7, title: 'sample' },
-  { id: 8, title: 'sample' },
-  { id: 9, title: 'sample' },
-  { id: 10, title: 'sample' },
-  { id: 11, title: 'sample' },
-  { id: 12, title: 'sample' },
-  { id: 13, title: 'sample' },
-  { id: 14, title: 'sample' },
+  { id: 7, title: 'GRADIENT TEXTS' },
 ];
