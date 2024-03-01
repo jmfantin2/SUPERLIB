@@ -11,7 +11,6 @@ export function FireFist({ mode }: FireFistProps) {
         alt=""
         src={mode === 'full' ? '/alchemist.webp' : '/fire_fist.png'}
         layout="fill"
-        objectFit="cover"
       />
     </div>
   );

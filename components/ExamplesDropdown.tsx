@@ -38,7 +38,7 @@ export function ExamplesDropdown() {
       {isOpen && (
         <div
           className="absolute rotate-180 md:rotate-0 z-10 top-2/3 md:top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 select-none
-          p-2 w-[50%] max-w-[300px] max-h-[50vh] border-2 border-b-8 shadow-2xl rounded-b-3xl overflow-y-auto 
+          p-2 w-[80%] md:w-[50%] md:max-w-[300px] max-h-[50vh] border-2 border-b-8 shadow-2xl rounded-b-3xl overflow-y-auto 
           bg-PAPER/80 text-IRON border-ORANGE border-b-ROSE backdrop-blur-md
           dark:bg-IRON/80 dark:text-PAPER dark:border-CYAN dark:border-b-EMERALD"
           onClick={toggleDropdown}
