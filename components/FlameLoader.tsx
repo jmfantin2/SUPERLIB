@@ -36,7 +36,7 @@ export function FlameLoader({ mode, greeting }: FlameLoaderProps) {
                 </div>
               </div>
               {greeting ? (
-                <div className="w-full text-center fixed bottom-1/3 text-xl md:text-3xl">
+                <div className="h-auto w-full text-center fixed bottom-1/3 text-xl md:text-3xl">
                   <p className="font-burtons text-transparent bg-clip-text bg-gradient-to-t from-[#ff7033] to-[#fdc569]">
                     {salvete[0]}
                   </p>

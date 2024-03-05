@@ -15,14 +15,13 @@ export default function Home() {
       <FlameLoader mode="fullpage" greeting />
       <main className="bg-PAPER h-[100vh] px-4 dark:bg-IRON md:px-20 lg:px-40">
         <Navigator />
-        <section className="mb-16 lg:mb-0 group rounded-lg border px-5 py-4 text-left transition-colors text-IRON dark:text-PAPER border-gray-400/30 bg-gray-100/30 dark:border-neutral-700 dark:bg-neutral-800/30">
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <FireFist mode="full" />
+        <section className="justify-center h-[60vh] mb-16 lg:mb-0 group rounded-lg border p-2 transition-colors text-IRON dark:text-PAPER border-gray-400/30 bg-gray-100/30 dark:border-neutral-700 dark:bg-neutral-800/30">
+          <div className="flex flex-col md:flex-row w-full justify-center items-center gap-4">
+            <FireFist mode="hand" size="sm" />
+            <p className="mt-4 md:mt-16 text-transparent opacity-70 bg-clip-text bg-gradient-to-r from-ORANGE to-ROSE dark:from-CYAN dark:to-EMERALD font-burtons text-5xl md:text-6xl lg:text-7xl">
+              frontend é arte
+            </p>
+          </div>
         </section>
       </main>
     </>
