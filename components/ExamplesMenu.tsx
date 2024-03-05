@@ -61,7 +61,7 @@ export function ExamplesMenu() {
               >
                 <p
                   className={shapeshifter(
-                    'border-b-2  border-ROSE/40 dark:border-EMERALD/40 font-burtons text-xl',
+                    'border-b-2  border-ROSE/40 dark:border-EMERALD/40 font-burtons text-xl cursor-none',
                     {
                       'bg-ORANGE/20 dark:bg-CYAN/20 hover:text-ROSE dark:hover:text-EMERALD hover:bg-whirl_light dark:hover:bg-whirl_dark cursor-pointer':
                         element.id !== 0, // todo -> !== currently selected
