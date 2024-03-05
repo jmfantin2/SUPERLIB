@@ -4,13 +4,19 @@
 
 /*
 PAPER: rgb(236, 231, 228) currently replacing WHITE rgb(255, 255, 255)
-IRON: rgb(38, 42, 45) currently replacing BLACK rgb(0, 0, 0) 
+IRON: rgb(38, 42, 45) currently replacing BLACK rgb(0, 0, 0)
+ORANGE: rgb(249, 98, 43) currently --from-accent
+ROSE: rgb(244, 63, 94) currently --to-accent
+CYAN: rgb(6, 182, 212) currently dark:--from-accent
+EMERALD: rgb(16, 185, 129) currently dark:--to-accent
 */
 
 :root {
   --foreground-rgb: 38, 42, 45;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 236, 231, 228;
+  --from-accent: 249, 98, 43;
+  --to-accent: 244, 63, 94;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,6 +24,8 @@ IRON: rgb(38, 42, 45) currently replacing BLACK rgb(0, 0, 0)
     --foreground-rgb: 236, 231, 228;
     --background-start-rgb: 38, 42, 45;
     --background-end-rgb: 38, 42, 45;
+    --from-accent: 6, 182, 212;
+    --to-accent: 16, 185, 129;
   }
 }
 
@@ -41,7 +49,12 @@ body {
 
 @font-face {
   font-family: 'burtons';
-  src: url('../public/Burtons.otf');
+  src: url('../public/fonts/Burtons.otf');
+}
+
+@font-face {
+  font-family: 'jubilat';
+  src: url('../public/fonts/Jubilat.otf');
 }
 
 /* ? FlameLoader BEGIN */

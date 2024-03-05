@@ -18,6 +18,7 @@ const config: Config = {
       },
       fontFamily: {
         burtons: 'burtons',
+        jubilat: 'jubilat',
       },
       colors: {
         PAPER: '#ece7e4',
