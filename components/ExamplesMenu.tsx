@@ -59,8 +59,27 @@ export function ExamplesMenu() {
                 key={element.id}
                 className="py-2 w-full text-center rotate-180 md:rotate-0"
               >
-                <p className="border-b-2 bg-ORANGE/20 border-ROSE/40 dark:bg-CYAN/20 dark:border-EMERALD/40 cursor-pointer font-burtons text-xl hover:text-ROSE dark:hover:text-EMERALD hover:bg-whirl_light dark:hover:bg-whirl_dark">
+                <p
+                  className={shapeshifter(
+                    'border-b-2  border-ROSE/40 dark:border-EMERALD/40 font-burtons text-xl',
+                    {
+                      'bg-ORANGE/20 dark:bg-CYAN/20 hover:text-ROSE dark:hover:text-EMERALD hover:bg-whirl_light dark:hover:bg-whirl_dark cursor-pointer':
+                        element.id !== 0, // todo -> !== currently selected
+                      'bg-MIDDLE/30 dark:bg-MIDDLE/30': element.id === 0, // todo -> === currently selected
+                    }
+                  )}
+                >
                   {element.title}
+                  <img
+                    className={shapeshifter(
+                      'fixed left-3/4 top-1/2 overflow-visible w-[35px] animate-bounce',
+                      {
+                        'hidden': element.id !== 0, // todo -> !== currently selected
+                      }
+                    )}
+                    src="/images/rpg_pointer.png"
+                    alt="rpg cursor"
+                  />
                 </p>
               </div>
             ))}
