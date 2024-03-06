@@ -46,7 +46,7 @@ export function ExamplesMenu() {
           <div
             id="MENU"
             className={shapeshifter(
-              'absolute rotate-180 md:rotate-0 z-10 top-2/3 md:top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 select-none p-2 w-[80%] md:w-[50%] md:max-w-[300px] max-h-[50vh] border-2 border-b-8 border-t-8 shadow-2xl rounded-b-3xl rounded-t-3xl overflow-y-auto bg-PAPER/80 text-IRON border-ORANGE border-b-ROSE border-t-ROSE backdrop-blur-md dark:bg-IRON/80 dark:text-PAPER dark:border-CYAN dark:border-b-EMERALD dark:border-t-EMERALD',
+              'absolute rotate-180 md:rotate-0 z-10 top-2/3 md:top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 select-none p-2 w-[80%] md:w-[50%] md:max-w-[300px] max-h-[50vh] border-2 border-b-8 border-t-8 shadow-2xl rounded-b-3xl rounded-t-3xl overflow-y-auto bg-PAPER/80 text-IRON border-ORANGE border-b-ROSE border-t-ROSE backdrop-blur-md dark:bg-IRON/80 dark:text-PAPER dark:border-CYAN dark:border-b-EMERALD dark:border-t-EMERALD group',
               {
                 'opacity-100 transition-opacity duration-500': isOpen,
               }
@@ -61,7 +61,7 @@ export function ExamplesMenu() {
               >
                 <p
                   className={shapeshifter(
-                    'border-b-2  border-ROSE/40 dark:border-EMERALD/40 font-burtons text-xl cursor-none',
+                    'border-b-2  border-ROSE/40 dark:border-EMERALD/40 font-burtons text-xl',
                     {
                       'bg-ORANGE/20 dark:bg-CYAN/20 hover:text-ROSE dark:hover:text-EMERALD hover:bg-whirl_light dark:hover:bg-whirl_dark cursor-pointer':
                         element.id !== 0, // todo -> !== currently selected
@@ -72,7 +72,7 @@ export function ExamplesMenu() {
                   {element.title}
                   <img
                     className={shapeshifter(
-                      'fixed left-3/4 top-1/2 overflow-visible w-[35px] animate-bounce',
+                      'fixed left-3/4 top-1/2 overflow-visible w-[35px] animate-bounce group-hover:hidden',
                       {
                         'hidden': element.id !== 0, // todo -> !== currently selected
                       }
