@@ -2,7 +2,7 @@
 import { ExamplesMenu } from '@/components/ExamplesMenu';
 import { FlameLoader } from '@/components/FlameLoader';
 import { Navigator } from '@/components/Navigator';
-import { FireFist } from '@/components/demos/FireFist';
+import { FireFist } from '@/components/FireFist';
 import TXT from '@/lib/strings';
 import Head from 'next/head';
 

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { SpinningTriangle } from './SpinningTriangle';
+import Toast from './Toast';
 
 export function Superlib() {
   const [mounted, setMounted] = useState(false);
@@ -11,7 +12,9 @@ export function Superlib() {
       id="LOGO SUPERLIB"
       className="select-none font-burtons mt-2 text-2xl flex flex-row text-IRON dark:text-PAPER"
     >
-      SUPERLIB
+      <div onClick={() => Toast('João Marcelo', 'Bem-vind@ à SUPERLIB!')}>
+        SUPERLIB
+      </div>
       {mounted ? (
         <>
           <p className="md:hidden lg:flex mx-2 text-base text-ORANGE dark:text-EMERALD">
